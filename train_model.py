@@ -40,5 +40,5 @@ history = model.fit(
     batch_size=128,
     validation_split=0.1)
 
-""" keras_path = "model.keras"
-model.save(keras_path) """
+keras_path = "model.keras"
+model.save(keras_path) 
