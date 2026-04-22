@@ -40,8 +40,5 @@ history = model.fit(
     batch_size=128,
     validation_split=0.1)
 
-keras_path = "model.keras"
-model.save(keras_path) 
-
 h5_path = "model.h5"
 model.save(h5_path)
