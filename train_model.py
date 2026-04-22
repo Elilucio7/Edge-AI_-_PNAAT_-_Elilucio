@@ -42,3 +42,6 @@ history = model.fit(
 
 keras_path = "model.keras"
 model.save(keras_path) 
+
+h5_path = "model.h5"
+model.save(h5_path)
