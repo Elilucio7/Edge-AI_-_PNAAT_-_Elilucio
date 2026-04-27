@@ -1,10 +1,11 @@
 ## 📝 Relatório do Candidato
 
+### Identificação do Candidato
 
-👤 Identificação: **Elilúcio Teixeira Félix Filho**
-    email: **eliluciofilho@gmail.com**
-    Discente do Curso: **Engenharia de Software**
-    Instituição: **Universidade Federal do Cariri**
+    Nome: Elilúcio Teixeira Félix Filho
+    email: eliluciofilho@gmail.com
+    Discente do Curso: Engenharia de Software
+    Instituição: Universidade Federal do Cariri
 
 
 ### 1️⃣ Resumo da Arquitetura do Modelo
