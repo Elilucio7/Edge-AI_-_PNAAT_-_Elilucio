@@ -15,9 +15,10 @@ x_tst = x_tst.reshape(-1, 28, 28, 1)
 #Criação da rede neural
 model = keras.Sequential([layers.Conv2D(20, kernel_size=(3, 3), activation="relu", input_shape=(28, 28, 1)),  
     layers.MaxPooling2D(pool_size=(3, 3)), 
-    layers.Conv2D(20, kernel_size=(3, 3), activation="relu"),
+    layers.Conv2D(16, kernel_size=(3, 3), activation="relu"),
     layers.Flatten(),
-    layers.Dense(64, activation="relu"),
+    layers.Dense(32, activation="relu"),
+    layers.Dense(32, activation="relu"),
     layers.Dropout(0.15),
     layers.Dense(10, activation='softmax')])
 
@@ -37,8 +38,7 @@ history = model.fit(
 
 #Print da acurácia e perda do modelo com um último teste  98.769999%
 loss, accuracy = model.evaluate(x_tst, y_tst)
-print(f"Accuracy: {accuracy:2%}")
+print(f"Accuracy: {accuracy:2%}\nLoss: {loss:2%}")
 
 #Salvando o modelo em formato .h5
-h5_path = "model.h5"
-model.save(h5_path)
+model.save("model.h5") 
